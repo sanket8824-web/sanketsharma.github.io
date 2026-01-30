@@ -1,4 +1,4 @@
-DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -14,17 +14,18 @@ DOCTYPE html>
     }
 
     .container {
-      max-width: 380px;
+      max-width: 400px;
       margin: 40px auto;
       padding: 0 15px;
     }
 
+    /* ===== PROFILE CARD ===== */
     .card {
       background: #020617;
-      border-radius: 22px;
-      padding: 28px;
+      border-radius: 24px;
+      padding: 30px;
       text-align: center;
-      box-shadow: 0 0 30px rgba(56,189,248,0.35);
+      box-shadow: 0 0 35px rgba(56,189,248,0.35);
     }
 
     .card img {
@@ -35,74 +36,106 @@ DOCTYPE html>
       object-fit: cover;
     }
 
-    .card h1 {
-      margin: 15px 0 8px;
+    h1 {
+      margin: 16px 0 8px;
       color: #38bdf8;
       font-size: 22px;
     }
 
-    .card p {
+    /* ===== ABOUT ===== */
+    .about {
       font-size: 14px;
       line-height: 1.6;
       color: #cbd5f5;
+      margin-top: 10px;
     }
 
+    /* ===== SKILLS ===== */
     .skills {
-      margin-top: 15px;
+      margin-top: 18px;
     }
 
     .skills span {
       display: inline-block;
-      background: rgba(56,189,248,0.15);
-      color: #38bdf8;
+      margin: 5px;
       padding: 6px 14px;
       border-radius: 20px;
       font-size: 12px;
-      margin: 4px;
+      color: #38bdf8;
       border: 1px solid #38bdf8;
+      background: rgba(56,189,248,0.12);
     }
 
-    .contact-btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 28px;
-      background: #25D366;
-      color: white;
-      text-decoration: none;
-      border-radius: 30px;
-      font-size: 14px;
-      font-weight: bold;
+    /* ===== SECTIONS ===== */
+    section {
+      margin-top: 35px;
     }
 
-    .projects {
-      margin-top: 30px;
-    }
-
-    .projects h2 {
+    section h2 {
       text-align: center;
       color: #38bdf8;
       margin-bottom: 15px;
       font-size: 20px;
     }
 
+    /* ===== PROJECTS ===== */
     .project-card {
       background: #020617;
       border-radius: 18px;
       padding: 18px;
-      margin-bottom: 15px;
       border: 1px solid #1e293b;
+      margin-bottom: 15px;
     }
 
     .project-card h3 {
       margin: 0 0 6px;
       font-size: 16px;
-      color: white;
     }
 
     .project-card p {
       font-size: 13px;
       color: #cbd5f5;
       line-height: 1.5;
+    }
+
+    /* ===== CONTACT ===== */
+    .contact {
+      background: #020617;
+      padding: 22px;
+      border-radius: 20px;
+      border: 1px solid #1e293b;
+      text-align: center;
+    }
+
+    .contact p {
+      font-size: 13px;
+      color: #cbd5f5;
+      margin-bottom: 15px;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin: 6px;
+      padding: 10px 18px;
+      border-radius: 25px;
+      color: #38bdf8;
+      border: 1px solid #38bdf8;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .contact a:hover {
+      background: #38bdf8;
+      color: #020617;
+    }
+
+    footer {
+      text-align: center;
+      margin: 20px 0;
+      font-size: 12px;
+      color: #94a3b8;
     }
   </style>
 </head>
@@ -113,44 +146,57 @@ DOCTYPE html>
 
     <!-- PROFILE -->
     <div class="card">
+      <!-- 🔽 APNI DIRECT IMAGE LINK YAHA DAALE -->
       <img src="https://i.ibb.co/j9XkbPVm/1763972944484-2.jpg" alt="Sanket Sharma">
 
       <h1>Sanket Sharma</h1>
 
-      <p>
+      <div class="about">
         I am a student based in Kota, Rajasthan with a strong interest in
-        <b>Python programming</b> and <b>web development</b>.<br>
-        I enjoy building simple and functional projects and continuously
-        work on improving my technical skills.
-      </p>
+        <b>Python programming</b> and <b>web development</b>.
+        I enjoy building clean and functional projects and continuously
+        work on improving my technical and problem-solving skills.
+      </div>
 
       <div class="skills">
         <span>Python (Basics)</span>
         <span>Web Development</span>
       </div>
-
-      <a href="https://wa.me/916367317712" class="contact-btn">
-        📞 Contact Me
-      </a>
     </div>
 
     <!-- PROJECTS -->
-    <div class="projects">
+    <section>
       <h2>Projects</h2>
 
       <div class="project-card">
         <h3>Expense Tracker (Python)</h3>
         <p>
-          A Python-based expense tracker application that allows users
-          to record and view daily expenses.
-          This project helped me improve my understanding of
-          file handling and basic programming logic.
+          A Python-based expense tracking application that allows users
+          to record and manage daily expenses.
+          This project helped me strengthen my understanding of
+          file handling and core programming concepts.
         </p>
       </div>
+    </section>
 
-    </div>
+    <!-- CONTACT -->
+    <section>
+      <h2>Contact</h2>
+
+      <div class="contact">
+        <p>If you would like to connect with me, feel free to reach out:</p>
+
+        <!-- 🔽 DETAILS CHANGE KARNA HAI -->
+        <a href="https://wa.me/916367317712" target="_blank">WhatsApp</a>
+        <a href="https://www.instagram.com/s4adw?igsh=MTI5ZTZteW1wYTBzcQ==" target="_blank">Instagram</a>
+      </div>
+    </section>
+
+    <footer>
+      © 2026 Sanket Sharma
+    </footer>
 
   </div>
 
 </body>
-</html>>
+</html>
